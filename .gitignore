@@ -1,5 +1,8 @@
 *.iml
 .gradle
+build/
+/*/*/build
+build
 /local.properties
 .idea
 .DS_Store
@@ -10,3 +13,4 @@
 .cxx
 local.properties
 /gradle/wrapper/
+/buildSrc/buildSrc/build/
