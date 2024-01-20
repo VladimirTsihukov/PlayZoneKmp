@@ -13,8 +13,10 @@ kotlin {
 
                 api(Dependencies.Ktor.core)
                 implementation(Dependencies.Ktor.json)
-                implementation(Dependencies.Ktor.logging)
                 implementation(Dependencies.Ktor.serialization)
+                implementation(Dependencies.Ktor.negotiation)
+                implementation(Dependencies.Ktor.kotlin_json)
+                implementation(Dependencies.Ktor.logging)
 
                 api(Dependencies.Kodein.core)
 

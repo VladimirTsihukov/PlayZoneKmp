@@ -22,6 +22,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":common:core"))
+    implementation(project(":common:games:api"))
     implementation(project(":common:umbrella:compose"))
 
     implementation("com.google.android.material:material:1.4.0")
