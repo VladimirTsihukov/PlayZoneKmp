@@ -1,7 +1,6 @@
 plugins {
-    id("multiplatform-compose-setup")
+    id("multiplatform-setup")
     id("android-setup")
-    kotlin("plugin.serialization")
 }
 
 kotlin {
@@ -9,9 +8,11 @@ kotlin {
         commonMain {
             dependencies {
                 implementation(project(":common:auth:api"))
-                implementation(project(":common:games:api"))
                 implementation(project(":common:core"))
-                implementation(Dependencies.Kodein.core)
+                implementation(project(":common:core-utils"))
+                implementation(project(":common:games:api"))
+
+                implementation(Dependencies.Other.ViewModel.core)
             }
         }
     }

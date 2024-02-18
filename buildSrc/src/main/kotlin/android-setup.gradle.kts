@@ -3,11 +3,19 @@ plugins {
 }
 
 android {
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 33
+    }
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.2.0"
     }
 
     compileOptions {
